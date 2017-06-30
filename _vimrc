@@ -1,4 +1,5 @@
 set nocompatible
+
 colorscheme desert
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
@@ -29,7 +30,9 @@ function MyDiff()
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
 
+
 call plug#begin()
   Plug 'scrooloose/nerdtree'
   Plug 'vhda/verilog_systemverilog.vim'
+  Plug 'nathanaelkane/vim-indent-guides'
 call plug#end()
