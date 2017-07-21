@@ -5,6 +5,14 @@ source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
+
+set backup
+set backupdir=$TEMP
+set backupskip=$TEMP
+set directory=$TEMP
+set writebackup
+set undodir=$TEMP
+
 set diffexpr=MyDiff()
 function MyDiff()
   let opt = '-a --binary '
