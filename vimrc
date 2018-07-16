@@ -52,4 +52,9 @@ call plug#begin()
   Plug 'scrooloose/nerdtree'
   Plug 'vhda/verilog_systemverilog.vim'
   Plug 'nathanaelkane/vim-indent-guides'
+  Plug 'majutsushi/tagbar'
+  Plug 'easymotion/vim-easymotion'
 call plug#end()
+
+" autostart plugins
+autocmd vimenter * NERDTree
